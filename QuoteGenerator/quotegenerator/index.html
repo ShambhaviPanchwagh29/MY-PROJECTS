@@ -1,0 +1,81 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 500px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #quoteDisplay {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Quote Generator</h1>
+        <div id="quoteDisplay"></div>
+        <button id="generateBtn">Generate Quote</button>
+    </div>
+    <script>
+        const quotes = [
+            "The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela",
+            "The way to get started is to quit talking and begin doing. - Walt Disney",
+            "Your time is limited, don't waste it living someone else's life. - Steve Jobs",
+            "If life were predictable it would cease to be life, and be without flavor. - Eleanor Roosevelt",
+            "Life is what happens when you're busy making other plans. - John Lennon",
+            "Spread love everywhere you go. Let no one ever come to you without leaving happier. - Mother Teresa",
+            "Don't judge each day by the harvest you reap but by the seeds that you plant. - Robert Louis Stevenson"
+        ];
+
+        const quoteDisplay = document.getElementById('quoteDisplay');
+        const generateBtn = document.getElementById('generateBtn');
+
+        generateBtn.addEventListener('click', generateQuote);
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            quoteDisplay.textContent = quotes[randomIndex];
+        }
+    </script>
+
+
+</body></html>
