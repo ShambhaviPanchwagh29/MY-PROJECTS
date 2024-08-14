@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+  <html lang="en" data-bs-theme="dark"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adaya Music Academy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .feature-icon {
+         width: 4rem;
+         height: 4rem;
+         border-radius: .75rem;
+         }
+         .carousel {
+         position: relative;
+         max-width: 600px; /* Adjust based on your needs */
+         margin: auto; /* Center the carousel */
+         overflow: hidden;
+         width: 700px;
+}
+.carousel-inner {
+  display: flex;
+  width: 100%;
+}
+.carousel-item {
+  flex: 0 0 100%; /* Each item takes full width of the carousel */
+  text-align: center;
+}
+.carousel-item img {
+  width: 100%; /* Make images responsive */
+}
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+/* Optional: Add automatic animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+  </style>
+  </head>
+  <body>
+    <!--Nav Bar Section-->
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="./music-note-beamed.svg" alt="music-note" height="30px" width="30px">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">Adaya Music Academy</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Instruments</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+          </ul>
+        </header>
+      </div>
+
+      <!--Heros-->
+      
+    <div class="px-4 pt-5 my-5 text-center border-bottom" >
+        <h1 class="display-4 fw-bold text-body-emphasis">Move With Joy!</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Welcome to ChaloShift, where we are dedicated to providing exceptional moving services to customers in India. As a startup, we believe that moving doesn't have to be stressful or complicated, and we are passionate about making the process as seamless and enjoyable as possible.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" fdprocessedid="j806u">Get A Quote</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4" fdprocessedid="0s976g">Contact Us</button>
+          </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+          <div class="container px-5">
+            <img src="Aesthetics-of-Classical-Music-Image.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700px" height="800px" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!--Features-->
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">What's special in this Academy</h2>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('music\ classical.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Classical Music and Instruments</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="./music-note-beamed.svg" alt="classical music" height="30px" width="30px">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                  </li>
+                  <li class="d-flex align-items-center">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('The_Piano.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Western Music and Instruments</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="./music-note.svg" alt="western music" width="30px" height="30px">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(about_us_1.jpg);">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Classical and Western Dance Forms</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="western dance.jpg" alt="Bootstrap" width="32" height="32" alt="rounded-circle border border-white" style="background-image: none;">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                  </li>
+                  <li class="d-flex align-items-center">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--Carousal-->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./classical music.jpg" class="d-block w-100" alt="..." width="700px" height="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="./western music.png" class="d-block w-100" alt="..." width="700px" height="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="./ballet.jpg" class="d-block w-100" alt="..." width="700px" height="500px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Footers-->
+      <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <p class="text-body-secondary">© 2024 Adya Music Academy</p>
+          </div>
+      
+          <div class="col mb-3">
+      
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Quick Links</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Contact Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Phone: +91 1234567890</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Email: adyamusic@gmail.com</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Follow Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Twitter</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
